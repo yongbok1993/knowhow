@@ -1,8 +1,10 @@
-# 명령어(wrangler)로 배포할 때만 쓰는 설정 파일이에요.
-# Cloudflare 대시보드에서 직접 배포한다면 이 파일은 필요 없어요.
+# GitHub 자동 배포(Workers Builds)와 wrangler 명령어가 쓰는 설정 파일이에요.
+# main 브랜치에 합쳐지면 Cloudflare가 이 설정대로 knowhow-village Worker를 배포해요.
 name = "knowhow-village"
 main = "worker.js"
 compatibility_date = "2026-09-01"
+# 대시보드에서 넣은 변수(Variables)를 배포 때 지우지 않도록 해요. 비밀값(Secret)은 원래 유지돼요.
+keep_vars = true
 
 [[d1_databases]]
 binding = "DB"
