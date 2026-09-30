@@ -9,6 +9,7 @@ binding = "DB"
 database_name = "knowhow-village-db"
 database_id = "f6fe0dc6-6c9d-4afa-8d78-20a016c66abc"
 
-[[r2_buckets]]
-binding = "FILES"
-bucket_name = "knowhow-village-files"
+# R2는 아직 켜지 않았어요. 홍보지·영상 파일 올리기가 필요해지면 R2를 켜고 아래 세 줄의 # 을 지우세요.
+# [[r2_buckets]]
+# binding = "FILES"
+# bucket_name = "knowhow-village-files"
